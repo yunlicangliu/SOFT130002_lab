@@ -6,11 +6,14 @@
 </head>
 <body>
 <header>
-    <a href="index.html">主页</a>
+    <a href="index.html"><h2>主页</h2></a>
 </header>
-<h1>注册帐户</h1>
+<center>
 <section>
     <form action="#" method="POST">
+        <fieldset style="width: 500px;border-color: blueviolet">
+            <legend><h1>注册帐户</h1></legend>
+        <p>
             用户名<br>
             <input type="text" name="username" pattern="^[a-zA-Z0-9_]{1,}$" placeholder="大小写字母数字和下划线" required>
         </p>
@@ -64,7 +67,7 @@
         </p>
         <p>
             手机号<br>
-            <input type="password" name="password" pattern="^1\d{12}$" placeholder="请输入手机号" required>
+            <input type="password" name="password" pattern="^1\d{10}$" placeholder="请输入手机号" required>
         </p>
         <p>
             常用设备<br>
@@ -153,7 +156,9 @@
         <p>
             <input type="submit" value="注册" name="submit">
         </p>
+        </fieldset>
     </form>
 </section>
+</center>
 </body>
 </html>
